@@ -1,2 +1,7 @@
 <h1>Welcome to BarberShop</h1>
-<p>Вы ввели <%= @login %></p>
+<% if @gender == "male" %>
+<p>Уважаемый <%= @yourname %></p>
+<% else %>
+<p>Уважаемая <%= @yourname %></p>
+<% end %>
+<p>Вы записаны 
