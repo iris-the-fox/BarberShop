@@ -52,6 +52,7 @@ post '/admin' do
 	if @login == "admin" && @pass == "secret"
 		send_file 'user.txt'
 	else 
+		@smth = 'Wrong login or password. Please, try again'
 		erb :admin
 	end
 end
