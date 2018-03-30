@@ -3,9 +3,21 @@
 
 
 <form action='/' method="POST">
-	<p>Введите имя:</p>
-	<input type="text" name="aaa" />
-	<p>Введите пароль:</p>
-	<input type="password" name="bbb"/> <br/> <br/>
+ <fieldset>
+	<p>Введите ваше имя:</p>
+	<input type="text" name="yourname" /><br>
+	<input type="radio" name="gender" value="male" > Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other <br>
+	<p> Выбекрите мастера:</p>
+	<select name="master">
+       <option value="nika">Nika</option>
+       <option value="osipov">Osipov</option>
+       <option value="tatiana">Tatiana</option>
+    </select>
+
+	<p>Введите желаемую дату</p>
+	<input type="text" name="bbb" />
 	<input type="submit" />
+ </fieldset>
 </form>
