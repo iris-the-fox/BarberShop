@@ -18,5 +18,9 @@ get "/Sinatra" do
 end
 
 post "/" do
+	@login = params[:aaa]
+	@pass = params[:bbb]
 	erb :wellcome
 end
+
+	
