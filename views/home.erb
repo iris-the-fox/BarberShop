@@ -9,26 +9,23 @@
 
 	<input type="radio" name="gender" value="male" > Male<br>
     <input type="radio" name="gender" value="female"> Female<br>
-    <input type="radio" name="gender" value="other"> Other <br>
-
-	<p> Выберите мастера:</p>
+    
+	<p>Выберите мастера:</p>
 	<select name="master">
        <option value="nika">Nika</option>
        <option value="osipov">Osipov</option>
        <option value="tatiana">Tatiana</option>
     </select>
 
-	<p>Введите желаемую дату</p>
-	  Enter a date before 1980-01-01:
-  <input type="date" name="bday" max="1979-12-31"><br>
-  Enter a date after 2000-01-01:
-  <input type="date" name="bday" min="2000-01-02"><br>
-  
-		
-
-	<textarea name="message" style="width:600px; height:200px">
+	<p>Введите желаемую дату (после 2018-03-31)</p>
+	<input type="date" name="bday" min="2018-03-01" max="2019-01-01"><br><br>
+	
+	<textarea name="message" style="width:600px; height:100px">
     Ваши пожелания
     </textarea>
-<input type="submit" />
+
+   <p>E-mail для связи:</p>
+   <input type="email" name="email"> <br>
+   <input type="submit" />
  </fieldset>
 </form>
