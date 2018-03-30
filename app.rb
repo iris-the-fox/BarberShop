@@ -17,9 +17,7 @@ get "/Sinatra" do
 	"<h3> I love  <a href='http://www.sinatrarb.com/'> Sinatra! </a> </h3>"
 end
 
-get '/admin' do
-    send_file 'user.txt'
-end
+
 
 post "/" do
 	@yourname = params[:yourname]
@@ -30,7 +28,8 @@ post "/" do
 	@email = params[:email]
 
 	f1 = File.open 'user.txt', 'a'
-	f1.write "User #{@yourname} записался на #{@day} к #{@master}
+	f1.write 
+"User #{@yourname} записался на #{@day} к #{@master}
 Дополнительные пожелания: #{@message} 
 E-mail для связи: #{@email}
 		    ===
@@ -40,5 +39,22 @@ E-mail для связи: #{@email}
 
 	erb :wellcome
 end
+
+get '/admin' do
+	erb :admin
+    
+end
+
+post '/admin' do
+	@login = params[:login]
+	@pass = params[:password]
+
+	if @login == "admin" && @pass == "secret"
+		send_file 'user.txt'
+	else 
+		erb :admin
+	end
+end
+
 
 	
