@@ -28,8 +28,7 @@ post "/" do
 	@email = params[:email]
 
 	f1 = File.open 'user.txt', 'a'
-	f1.write 
-"User #{@yourname} записался на #{@day} к #{@master}
+	f1.write "User #{@yourname} записался на #{@day} к #{@master}
 Дополнительные пожелания: #{@message} 
 E-mail для связи: #{@email}
 		    ===
