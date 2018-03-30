@@ -22,6 +22,17 @@ post "/" do
 	@gender = params[:gender]
 	@master = params[:master]
 	@day = params[:day]
+	@message = params[:message]
+	@email = params[:email]
+
+	f = File.open 'user.txt', 'a'
+	f.write "User #{@yourname} записался на #{@day} к #{@master}
+		    Дополнительные пожелания: #{@message} 
+		    E-mail для связи: #{@email}
+		    ==="
+	f.close
+
+
 	erb :wellcome
 end
 
