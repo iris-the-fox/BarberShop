@@ -18,8 +18,7 @@ get "/Sinatra" do
 end
 
 get '/admin' do
-    @f2 = File.read("user.txt")
-    erb :create
+    send_file 'user.txt'
 end
 
 post "/" do
