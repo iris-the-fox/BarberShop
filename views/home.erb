@@ -5,11 +5,13 @@
 <form action='/' method="POST">
  <fieldset>
 	<p>Введите ваше имя:</p>
-	<input type="text" name="yourname" /><br>
+	<input type="text" name="yourname" /><br><br>
+
 	<input type="radio" name="gender" value="male" > Male<br>
     <input type="radio" name="gender" value="female"> Female<br>
     <input type="radio" name="gender" value="other"> Other <br>
-	<p> Выбекрите мастера:</p>
+
+	<p> Выберите мастера:</p>
 	<select name="master">
        <option value="nika">Nika</option>
        <option value="osipov">Osipov</option>
@@ -17,7 +19,16 @@
     </select>
 
 	<p>Введите желаемую дату</p>
-	<input type="text" name="bbb" />
-	<input type="submit" />
+	  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+  
+		
+
+	<textarea name="message" style="width:600px; height:200px">
+    Ваши пожелания
+    </textarea>
+<input type="submit" />
  </fieldset>
 </form>
