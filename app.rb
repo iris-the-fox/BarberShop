@@ -20,6 +20,8 @@ end
 post "/" do
 	@yourname = params[:yourname]
 	@gender = params[:gender]
+	@master = params[:master]
+	@day = params[:day]
 	erb :wellcome
 end
 
