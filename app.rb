@@ -17,6 +17,11 @@ get "/Sinatra" do
 	"<h3> I love  <a href='http://www.sinatrarb.com/'> Sinatra! </a> </h3>"
 end
 
+get '/admin' do
+    @f2 = File.read("user.txt")
+    erb :create
+end
+
 post "/" do
 	@yourname = params[:yourname]
 	@gender = params[:gender]
@@ -25,12 +30,13 @@ post "/" do
 	@message = params[:message]
 	@email = params[:email]
 
-	f = File.open 'user.txt', 'a'
-	f.write "User #{@yourname} записался на #{@day} к #{@master}
-		    Дополнительные пожелания: #{@message} 
-		    E-mail для связи: #{@email}
-		    ==="
-	f.close
+	f1 = File.open 'user.txt', 'a'
+	f1.write "User #{@yourname} записался на #{@day} к #{@master}
+Дополнительные пожелания: #{@message} 
+E-mail для связи: #{@email}
+		    ===
+		    "
+	f1.close
 
 
 	erb :wellcome
