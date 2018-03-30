@@ -12,27 +12,27 @@
 <form action='/' method="POST">
  <fieldset>
 	<p>Введите ваше имя:</p>
-	<input type="text" name="yourname" /><br><br>
+	<input type="text" name="yourname" required/><br><br>
 
-	<input type="radio" name="gender" value="male" > Male<br>
-    <input type="radio" name="gender" value="female"> Female<br>
+	<input type="radio" name="gender" value="male" required > Male<br>
+  <input type="radio" name="gender" value="female" required> Female<br>
     
 	<p>Выберите мастера:</p>
-	<select name="master">
+	<select name="master" required>
        <option value="Nika">Nika</option>
        <option value="Osipov">Osipov</option>
        <option value="Tatiana">Tatiana</option>
     </select>
 
 	<p>Введите желаемую дату (после 2018-03-31)</p>
-	<input type="date" name="day" min="2018-04-01" max="2019-01-01"><br><br>
+	<input type="date" name="day" min="2018-04-01" max="2019-01-01" required><br><br>
 	
+  <p>Дополнительные пожелания:</p>
 	<textarea name="message" style="width:600px; height:100px">
-Ваши пожелания
-    </textarea>
+  </textarea>
 
    <p>E-mail для связи:</p>
-   <input type="email" name="email"> <br><br>
+   <input type="email" name="email" required> <br><br>
    <input type="submit" />
  </fieldset>
 </form>
