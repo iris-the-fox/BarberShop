@@ -1,4 +1,5 @@
 require "sinatra"
+require "sinatra/reloader"
 
 get "/" do
 	erb :home
@@ -17,7 +18,9 @@ get "/Sinatra" do
 	"<h3> I love  <a href='http://www.sinatrarb.com/'> Sinatra! </a> </h3>"
 end
 
-
+get "/ex" do
+	erb :ex
+end
 
 post "/" do
 	@yourname = params[:yourname]

@@ -1,16 +1,19 @@
 
 <html>
 <head>
-<link  href="/css/mystyle.css" rel="stylesheet" >
+ <link  href="/css/bootstrap.css" rel="stylesheet" >
+ <link  href="/css/mystyle.css" rel="stylesheet" >
+
 </head>
 
 <body>
-<h1>Hello!</h1>
-<p>Welcome to BarberShop</p>
+ <h1>Hello!</h1>
+ <p>Welcome to BarberShop</p>
 
 
 <form action='/' method="POST">
- <fieldset>
+<fieldset class="scheduler-border">
+    <legend class="scheduler-border">Start Time</legend
 	<p>Введите ваше имя:</p>
 	<input type="text" name="yourname" required/><br><br>
 
@@ -33,7 +36,9 @@
 
    <p>E-mail для связи:</p>
    <input type="email" name="email" required> <br><br>
-   <input type="submit" />
+   
+   <input class="btn primary"  type="submit" />
+
  </fieldset>
 </form>
 </body>
