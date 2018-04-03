@@ -5,33 +5,42 @@
 <form action='/' method="POST">
 <fieldset class="scheduler-border">
     <legend class="scheduler-border">Start Time</legend>
-	<p>Введите ваше имя:</p>
-	<input label="Вввввведите ваше имя" type="text" name="yourname" placeholder="Ваше имя"required/><br><br>
+	
+<div>
+  <p>Введите ваше имя:</p>
+	<div class="col-4">
+  <input class="form-control" label="Вввввведите ваше имя" type="text" name="yourname" placeholder="Ваше имя"required/><br><br>
 
 	<input type="radio" name="gender" value="male" required > Male<br>
   <input type="radio" name="gender" value="female" required> Female<br>
     
 	<p>Выберите мастера:</p>
-	<select name="master" required>
+	<select class="form-control" name="master" required>
        <option value="Nika">Nika</option>
        <option value="Osipov">Osipov</option>
-       <option value="Tatiana">Tatiana</option>
+       <option value="Tatiana">Tatiana</option>  
     </select>
 
-	<p>Введите желаемую дату (после 2018-03-31)</p>
-	<input type="date" name="day" min="2018-04-01" max="2019-01-01" required><br><br>
-	<p>Введите желаемое время (Мы работаем с 10:00 до 22:00 каждый день)</p>
-  <input type="time" name="time" min="10:00:00" max="22:00:00" required><br><br>
+<br>
 
+	  <p>Введите желаемую дату (после 2018-03-31)</p>
+	  <input class="form-control" type="date" name="day" min="2018-04-01" max="2019-01-01" required><br><br>
+	  <p>Введите желаемое время (Мы работаем с 10:00 до 22:00 каждый день)</p>
+    <input class="form-control" type="time" name="time" min="10:00:00" max="22:00:00" required><br><br>
+
+    <p>E-mail для связи:</p>
+    <input class="form-control" type="email" name="email" placeholder="example@ex.com" required> <br><br>
+     </div>
+  
   <p>Дополнительные пожелания:</p>
-	<textarea name="message" style="width:600px; height:100px" name="comment" placeholder="Место для ваших пожеланий"></textarea>
-
-
-   <p>E-mail для связи:</p>
-   <input type="email" name="email" placeholder="example@ex.com" required> <br><br>
-   
-   <input class="btn btn-primary"  type="submit" value="Записаться" />
-
+   <div class="col-6">
+    <textarea class="form-control" name="message" style="width:600px; height:100px" name="comment" placeholder="Место для ваших пожеланий"></textarea>
+   </div>
+<br> <br>
+      <div class="col-1">
+        <input class="btn btn-primary"  type="submit" value="Записаться" />
+     </div>
+   </div>
  </fieldset>
 </form>
 </body>
