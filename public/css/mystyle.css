@@ -1,17 +1,15 @@
 body {
-    background-color: lightblue;
-    font-size: 14px
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
 }
 
+p {font-size: 16px;}
+
 h1 {
-    color: red;
-    /* This is a single-line comment */
     text-align: center;
 }
 
 h2 {
-    color: navy;
-    /* This is a single-line comment */
     text-align: center;
 }
 
