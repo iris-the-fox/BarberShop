@@ -4,7 +4,10 @@ body {
     line-height: 1.8;
     background-color: #e4ebed;
 }
-
+.mynav {
+    background-color: #e4ebed;
+    border-radius: 0.25rem;
+}
 p 
 {font-size: 16px;}
 
