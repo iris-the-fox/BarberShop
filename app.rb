@@ -59,5 +59,9 @@ post '/admin' do
 	end
 end
 
+get '/contacts' do
+	erb :contacts
+end
+
 
 	
