@@ -63,5 +63,7 @@ get '/contacts' do
 	erb :contacts
 end
 
-
+get '/calc' do
+	erb :calc
+end
 	
