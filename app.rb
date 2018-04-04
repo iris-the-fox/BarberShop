@@ -66,4 +66,10 @@ end
 get '/calc' do
 	erb :calc
 end
+
+post '/calc' do
+	@need = params[:need]
+	@messagecalc = "Вы выбрали #{@need}"
+	erb :calc
+end
 	
