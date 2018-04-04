@@ -8,8 +8,13 @@ body {
     background-color: #e4ebed;
     border-radius: 0.25rem;
 }
-p 
-{font-size: 16px;}
+p {
+    font-size: 16px;
+}
+
+.min {
+    font-size: 12px;
+}
 
 h1 { 
     text-align: center;
