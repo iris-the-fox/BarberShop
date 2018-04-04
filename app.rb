@@ -68,8 +68,14 @@ get '/calc' do
 end
 
 post '/calc' do
-	@need = params[:need]
-	@messagecalc = "Вы выбрали #{@need}"
+	   @need = params[:need]
+	
+	@long = params[:long]
+	longhash = {"long1" => 1,"long2" => 2,"long3" => 3,"long4" => 4,"long5" =>5, "long6" =>6}
+	stylehash = {"Cut" => 1000, "Styling" => 500, "Simplcolor" => 800, "Hardcolor" =>900}
+	price = longhash[@long]*stylehash[@need]
+	@messagecalc = "Вы выбрали #{price}"
+
 	erb :calc
 end
 	
